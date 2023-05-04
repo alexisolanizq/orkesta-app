@@ -13,10 +13,10 @@
         border: 2px solid $gray;
         outline: none;
         width: 100%;
-        padding: 20px 50px 20px;
+        padding: 15px 50px 15px;
         border-radius: 3px;
         color: $gray;
-        font-size: 25px;
+        font-size: 20px;
         margin-bottom: 10px;
     }
     .searcher__containter__img{
@@ -26,16 +26,22 @@
     
     .searcher__container__img__search{
         position: absolute;
-        top: 25px;
+        top: 20px;
         left: 15px;
     }
 
     .searcher__container__button{
         position: absolute;
-        top: 40px;
+        top: 36px;
         right: 40px;
         z-index: 10;
-        cursor: pointer;
+
+        .searcher__container__button__icon{
+            cursor: pointer;
+        }
+        .searcher__container__button__close{
+            cursor: pointer;
+        }
     }
 }
 
@@ -48,5 +54,6 @@
         font-weight: 600;
         text-decoration: underline;
         text-underline-offset: 2px;
+        font-size: 16px;
     }
 }

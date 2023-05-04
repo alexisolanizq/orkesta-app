@@ -1,5 +1,10 @@
 import { createApp } from 'vue'
 import '@/assets/scss/index.scss'
-import Home from './pages/Home.vue'
+import App from './App.vue'
+import router from './router'
+import OhVueIcon from '@/utils/icons'
 
-createApp(Home).mount('#app')
+const app = createApp(App)
+app.use(router)
+app.component('v-icon', OhVueIcon)
+app.mount('#app')

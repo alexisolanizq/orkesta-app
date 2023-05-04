@@ -1,19 +1,10 @@
 <script setup>
-import Products from '@/components/common/Products.vue';
-import Reader from '@/components/common/Reader.vue';
-import Header from '@/components/layout/Header.vue';
-import Searcher from '@/components/layout/Searcher.vue';
+import Products from "@/components/common/Products.vue";
+import Empty from "@/components/layout/Empty.vue";
+const products = []
 </script>
 
 <template>
-    <div class="home">
-        <Header />
-        <div class="home__body">
-            <Searcher />
-            <Reader />
-            <Products />
-            <Products />
-            <Products />
-        </div>
-    </div>
+  <Empty v-if="products.length <= 0" />
+  <Products v-else />
 </template>

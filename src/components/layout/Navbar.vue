@@ -8,7 +8,9 @@ import cart from "@/assets/icons/cart.svg";
 
 <template>
   <nav class="header__navbar">
-    <img class="header__navbar__logo" :src="logo" alt="logo-orkesta" />
+    <router-link to="/">
+      <img class="header__navbar__logo" :src="logo" alt="logo-orkesta" />
+    </router-link>
     <div class="header__navbar__access">
       <img class="header__navbar__logo" :src="logoName" alt="logo-orkesta" />
       <div class="header__navbar__items">
