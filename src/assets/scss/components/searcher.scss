@@ -1,0 +1,52 @@
+.searcher__filter{
+    display: block;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 3px solid $blue;
+    background: $body;
+    z-index: 10;
+
+    .searcher__container__input{
+        display: block;
+        border: 2px solid $gray;
+        outline: none;
+        width: 100%;
+        padding: 20px 50px 20px;
+        border-radius: 3px;
+        color: $gray;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .searcher__containter__img{
+        position: absolute;
+        pointer-events: none;
+    }
+    
+    .searcher__container__img__search{
+        position: absolute;
+        top: 25px;
+        left: 15px;
+    }
+
+    .searcher__container__button{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        z-index: 10;
+        cursor: pointer;
+    }
+}
+
+.filters{
+    text-align: end;
+
+    .filters__button{
+        cursor: pointer;
+        color: $blue;
+        font-weight: 600;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+    }
+}

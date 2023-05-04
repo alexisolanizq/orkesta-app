@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+}
+
+button{
+    background: none;
+    border: none;
+    outline: none;
+}
+.scanner-container{
+  display: block;
+  width: 90%;
+  margin: 20px auto 0 auto;
+}
+.text-gray{
+  color: $gray;
+}
+.font-bold{
+  font-weight: 500;
+}

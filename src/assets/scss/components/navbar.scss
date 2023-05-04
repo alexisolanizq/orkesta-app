@@ -1,0 +1,22 @@
+.header__navbar{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 15px 20px;
+    z-index: 50;
+    background: $navbar;
+    width: 100%;
+}
+
+.header__navbar__access{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.header__navbar__items{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
