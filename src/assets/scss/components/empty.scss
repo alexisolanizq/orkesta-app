@@ -1,7 +1,16 @@
-.empty{
-    padding: 50px 30px;
-    height: 100%;
+.start,
+.empty {
+  padding: 50px 30px;
+  height: 100%;
+  text-align: center;
 }
+.empty {
+  color: $red;
+}
+.start{
+  color: $blue;
+}
+
 
 .loader {
   width: 48px;

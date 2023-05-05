@@ -2,8 +2,6 @@
 import Products from '@/components/common/Products.vue';
 import Reader from '@/components/common/Reader.vue';
 import { useProducts } from '@/composables/products';
-import { useSearch } from '@/composables/search';
-const { filter } = useSearch()
 const { products } = useProducts()
 </script>
 

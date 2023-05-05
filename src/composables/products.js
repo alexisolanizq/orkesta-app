@@ -1,20 +1,20 @@
-import useProductStore from "@/store/modules/products/product"
+import useProductStore from "@/store/modules/products/product";
+import { storeToRefs } from "pinia";
 
 export const useProducts = () => {
+  const productStore = useProductStore();
+  const { products } = storeToRefs( productStore )
+  const priceFormat = (number) => {
+    const formater = new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: "USD",
+    });
 
-    const { products } = useProductStore()
+    return formater.format(number);
+  };
 
-    const priceFormat = (number) => {
-        const formater = new Intl.NumberFormat('en-US', {
-            style: 'currency',
-            currency: 'USD'
-        })
-
-        return formater.format(number)
-    }
-
-    return {
-        priceFormat,
-        products
-    }
-}
+  return {
+    priceFormat,
+    products,
+  };
+};

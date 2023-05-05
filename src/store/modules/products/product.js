@@ -4,6 +4,7 @@ import { defineStore } from "pinia";
 const useProductStore = defineStore("product", {
   state: () => ({
     products: [],
+    errors: []
   }),
   actions: {
     async getProducts(params) {
@@ -12,11 +13,19 @@ const useProductStore = defineStore("product", {
           `/products?with_selects=0&page=1&limit=50&search=${params}&with_products=1`
         );
 
-        this.products = data?.products?.data
+        if(data.status === 'success'){
+          this.products = data?.products?.data
+        } else {
+          this.products = []
+          this.errors = data?.msg
+        }
       } catch (error) {}
     },
+    clearState() {
+        this.products = []
+    }
   },
-  persist: true,
+
 });
 
 export default useProductStore;

@@ -1,8 +1,6 @@
-<script setup></script>
-
 <template>
   <div class="empty">
-    <span class="loader"></span>
-    <p class="text-center">Comience una búsqueda para ver productos</p>
+    <v-icon name="md-searchoff" scale="2.5" />
+    <p>No existen resultados para esta búsqueda</p>
   </div>
 </template>

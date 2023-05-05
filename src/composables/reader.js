@@ -1,15 +1,20 @@
+import useMainStore from "@/store";
+import useProductStore from "@/store/modules/products/product";
+
 export const useReader = () => {
+  const productsStore = useProductStore();
+  const mainStore = useMainStore();
 
-    const onDecode = (text) => {
-        console.log(`Decode text from QR code is ${text}`)
-    }
+  const onDecode = (text) => {
+    mainStore.setFilter(text);
+  };
 
-    const onLoaded = () => {
-       console.log(`Ready to start scanning barcodes`)
-    }
+  const onLoaded = () => {
+    productsStore.clearState();
+  };
 
-    return {
-        onDecode,
-        onLoaded
-    }
-}
+  return {
+    onDecode,
+    onLoaded,
+  };
+};
