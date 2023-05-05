@@ -23,7 +23,7 @@ const { filter, clearFilter } = useSearch();
       <div class="searcher__container__button">
         <RouterLink
           v-if="!filter.length"
-          to="search/scanner"
+          to="/search/scanner"
           class="searcher__container__button__icon"
         >
           <img :src="barCode" alt="Bar code icon" />

@@ -14,7 +14,7 @@ const router = createRouter({
           component: () => import("@/pages/Home.vue"),
         },
         {
-          path: "search/scanner",
+          path: "/search/scanner",
           name: "searcher",
           component: () => import("@/pages/scanner/Scanner.vue"),
         },
