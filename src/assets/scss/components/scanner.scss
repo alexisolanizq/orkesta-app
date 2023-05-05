@@ -1,0 +1,21 @@
+.search__options{
+    width: 100%;
+    background: $white;
+    padding: 20px;
+
+    .search__options__back a{
+        color: $blue;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .search__options__back__legend{
+        font-weight: 600;
+        margin-top: 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+}

@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-color: $body;
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+}
+
+button{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.text-center{
+  @include text-center;
+}
+
+.scanner-container{
+  display: block;
+  width: 100%;
+  
+  .overlay-element{
+    height: 100%;
+  }
+}
+.text-gray{
+  color: $gray;
+}
+.font-bold{
+  font-weight: 500;
+}
